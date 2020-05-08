@@ -1,4 +1,4 @@
-package com.example.breadcrumb.demo.domain;
+package com.example.breadcrumb.demo.domain.shop;
 
 public class SubCategory {
     String code;

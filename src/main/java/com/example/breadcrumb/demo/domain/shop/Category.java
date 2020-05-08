@@ -1,10 +1,10 @@
-package com.example.breadcrumb.demo.domain;
+package com.example.breadcrumb.demo.domain.shop;
 
-public class Shop {
+public class Category {
     String code;
     String name;
 
-    public Shop(String code, String name) {
+    public Category(String code, String name) {
         this.code = code;
         this.name = name;
     }

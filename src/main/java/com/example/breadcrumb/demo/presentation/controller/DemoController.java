@@ -1,8 +1,8 @@
 package com.example.breadcrumb.demo.presentation.controller;
 
-import com.example.breadcrumb.demo.domain.Category;
-import com.example.breadcrumb.demo.domain.Shop;
-import com.example.breadcrumb.demo.domain.SubCategory;
+import com.example.breadcrumb.demo.domain.shop.Category;
+import com.example.breadcrumb.demo.domain.shop.Shop;
+import com.example.breadcrumb.demo.domain.shop.SubCategory;
 import com.example.breadcrumb.demo.domain.breadcrumb.BreadcrumbFactory;
 import com.example.breadcrumb.demo.domain.breadcrumb.Breadcrumbs;
 import com.example.breadcrumb.demo.domain.breadcrumb.pattern.BreadcrumbOfCategory;

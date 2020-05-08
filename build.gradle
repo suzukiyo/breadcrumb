@@ -1,3 +1,12 @@
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'idea'
+apply plugin: 'groovy'
+
+group = 'com.example.breadcrumb'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.11
+
 buildscript {
     ext {
         springBootVersion = '1.5.8.RELEASE'
@@ -10,18 +19,27 @@ buildscript {
     }
 }
 
-apply plugin: 'java'
-apply plugin: 'idea'
-apply plugin: 'groovy'
-apply plugin: 'org.springframework.boot'
+jar {
+    baseName = 'breadcrumb'
+    version = '1.0.0'
+}
 
-group = 'com.example.breadcrumb'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 1.8
+bootRepackage {
+    enabled = false
+}
+
+sourceSets {
+    main {
+        resources.srcDirs = ["src/main/java", "src/main/resources"]
+    }
+    test {
+        resources.srcDirs = ["src/test/java", "src/test/resources"]
+    }
+}
 
 repositories {
     mavenCentral()
-    maven { url 'https://jitpack.io' }
+    jcenter()
 }
 
 ext['thymeleaf.version'] = '3.0.2.RELEASE'

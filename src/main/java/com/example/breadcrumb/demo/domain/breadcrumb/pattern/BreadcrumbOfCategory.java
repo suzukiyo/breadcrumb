@@ -1,7 +1,7 @@
 package com.example.breadcrumb.demo.domain.breadcrumb.pattern;
 
-import com.example.breadcrumb.demo.domain.Category;
-import com.example.breadcrumb.demo.domain.Shop;
+import com.example.breadcrumb.demo.domain.shop.Category;
+import com.example.breadcrumb.demo.domain.shop.Shop;
 import com.example.breadcrumb.demo.domain.breadcrumb.Breadcrumb;
 
 public class BreadcrumbOfCategory implements Breadcrumb {
