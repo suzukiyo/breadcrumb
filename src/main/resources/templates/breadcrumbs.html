@@ -5,14 +5,9 @@
 <ol itemscope itemtype="http://schema.org/BreadcrumbList">
     <th:block th:each="breadcrumb, stat : ${breadcrumbs.list()}" >
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <th:block th:if="${!stat.last}">
-                <a href="/" title="{name}へ移動する" th:href="${breadcrumb.path()}" th:title="${breadcrumb.title()}" itemprop="item">
-                    <span itemprop="name" th:text="${breadcrumb.text()}">{text}</span>
-                </a>
-            </th:block>
-            <th:block th:if="${stat.last}">
+            <a href="/" title="{name}へ移動する" th:href="${breadcrumb.path()}" th:title="${breadcrumb.title()}" itemprop="item">
                 <span itemprop="name" th:text="${breadcrumb.text()}">{text}</span>
-            </th:block>
+            </a>
             <meta itemprop="position" th:content="${stat.count}" />
         </li>
     </th:block>
